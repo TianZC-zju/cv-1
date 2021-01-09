@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JS Bin</title>
+
+</head>
+<body>
+
+<!--这是添加样式的方法-->
+<style id="style"></style>
+<!--把方框固定在右边-->
+<style>
+    #div1{
+        position: fixed;
+        right:20px;
+        top:20px;
+        font-size:larger;
+    }
+    #div1::before{
+        content: '';
+        display: block;
+        position: absolute;
+    }
+    #div1::after{
+        content: '';
+        display: block;
+        position: absolute;
+    }
+    #html{
+        word-break: break-all;
+    }
+
+
+</style>
+<div id="html">hsh</div>
+<div id="div1"></div>
+
+<!--这里放在head就会导致document.querySelector失效, 只有放在下面-->
+ <script src="./cv.js"></script>
+
+</body>
+
+</html>
