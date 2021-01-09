@@ -38,6 +38,7 @@ var server = http.createServer(function (request, response) {
             <style id="style"></style>
             <!--把方框固定在右边-->
             <style>
+                *{margin: 0;padding: 0;box-sizing: border-box;}
                 #div1{
                     position: fixed;
                     right:20px;
