@@ -64,7 +64,7 @@ var server = http.createServer(function (request, response) {
             <div id="div1"></div>
             
             <!--这里放在head就会导致document.querySelector失效, 只有放在下面-->
-             <script src="./cv.js"></script>
+             <script src="/y"></script>
             
             </body>
             
